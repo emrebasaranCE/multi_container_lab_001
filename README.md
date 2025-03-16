@@ -10,4 +10,12 @@ In this example, we will containeraze 3 different apps which these are: backend,
             --network new_network \
             mongo
 
+2) Creating backend build:
 
+        docker build -t backend-node .
+
+3) Running backend image:
+
+        docker run -d --rm --name backend-cont -p 80:80 backend-node
+
+4) 
